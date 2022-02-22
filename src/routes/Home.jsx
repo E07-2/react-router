@@ -6,9 +6,7 @@ const Home = () => {
     <>
       <main style={{ textAlign: "center" }}>
         <h2>Welcome to react router</h2>
-        <p>Home</p>
       </main>
-      
       <nav style={{ textAlign: "center" }}>
         <Link to="/">Home</Link> |{" "}
         <Link to="about">About</Link> |{" "}
