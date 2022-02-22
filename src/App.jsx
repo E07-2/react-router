@@ -14,6 +14,15 @@ const App = () => {
         <Route path="/" element={<Home />}>
           <Route path="about" element={<About />} />
           <Route path="team" element={<Team />}>
+            {/* create an index route for Team */}
+            <Route
+              index
+              element={
+                <main style={{ padding: "1rem" }}>
+                  <h2>Team</h2>
+                </main>
+              }
+            />
             {/* nest member route inside of team route */}
             <Route path=":memberId" element={<Member />} />
           </Route>
